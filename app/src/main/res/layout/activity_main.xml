@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Number"
+
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center" >
+
+
+        <RadioButton
+            android:id="@+id/euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Euro To Dinar"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+        <RadioButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/dinar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinar To Euro"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700"
+            android:text="Le Résultat est :" />
+
+        <TextView
+
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:text="00" />
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERT"
+        android:layout_marginTop="20dp"
+
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+</LinearLayout>
